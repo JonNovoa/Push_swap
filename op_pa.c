@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   op_sb.c                                            :+:      :+:    :+:   */
+/*   op_pa.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jon <jon@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/24 21:13:32 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/05/24 21:32:06 by jnovoa-a         ###   ########.fr       */
+/*   Created: 2025/05/27 00:09:44 by jon               #+#    #+#             */
+/*   Updated: 2025/05/27 00:11:45 by jon              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	op_sb(t_stack *st)
+void	op_pa(t_stack *st)
 {
-	t_node	*first;
-	t_node	*second;
-
-	if (!st || !st->b || !st->b->next)
-		return ;
-	first = st->b;
-	second = first->next;
-	first->next = second->next;
-	second->next = first;
-	st->b = second;
-	write(1, "sb\n", 3);
+	push_a(st);
+	write(1, "pa\n", 3);
 }
