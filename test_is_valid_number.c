@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_valid_number.c                                  :+:      :+:    :+:   */
+/*   test_is_valid_number.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 18:26:17 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/05/24 21:26:05 by jnovoa-a         ###   ########.fr       */
+/*   Updated: 2025/05/27 20:24:38 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,16 +59,3 @@ static int	within_limits(const char *s, int sign, int i)
 	return (1);
 }
 
-int	is_valid_number(char *str)
-{
-	int	sign;
-	int	i;
-
-	if (!valid_format(str, &sign, &i))
-		return (0);
-	if (!is_digit_str(str + i))
-		return (0);
-	if (!within_limits(str, sign, &i))
-		return (0);
-	return (1);
-}
