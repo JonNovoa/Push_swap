@@ -6,7 +6,7 @@
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 18:26:17 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/05/27 20:24:38 by jnovoa-a         ###   ########.fr       */
+/*   Updated: 2025/05/28 18:23:15 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,3 @@ static int	within_limits(const char *s, int sign, int i)
 	}
 	return (1);
 }
-
