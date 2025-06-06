@@ -6,7 +6,7 @@
 /*   By: jnovoa-a <jnovoa-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/06 17:43:39 by jnovoa-a          #+#    #+#             */
-/*   Updated: 2025/06/06 17:49:02 by jnovoa-a         ###   ########.fr       */
+/*   Updated: 2025/06/06 18:03:09 by jnovoa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,20 @@ static void	push(t_stack_node **dest, t_stack_node **src)
 	}
 }
 
-void	pa(t_stack_node **a, t_stack_node)
+void	pa(t_stack_node **a, t_stack_node **b, bool checker)
 {
-	
+	push(a, b);
+	if (!checker)
+	{
+		write (1, "pa\n", 3);
+	}
+}
+
+void	pb(t_stack_node **b, t_stack_node **a, bool checker)
+{
+	push (b, a);
+	if (!checker)
+	{
+		write(1, "pb\n", 3);
+	}
 }
